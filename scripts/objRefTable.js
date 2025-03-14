@@ -10,8 +10,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.jumpthru,
 		C3.Behaviors.solid,
 		C3.Plugins.Keyboard,
+		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.Keyboard.Cnds.OnKey,
-		C3.Plugins.Sprite.Acts.SetMirrored
+		C3.Plugins.Sprite.Acts.SetMirrored,
+		C3.Behaviors.Platform.Cnds.OnMove,
+		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Behaviors.Platform.Cnds.OnStop
 	];
 };
 self.C3_JsPropNameTable = [
