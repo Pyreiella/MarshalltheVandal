@@ -29,7 +29,11 @@ self.C3_JsPropNameTable = [
 	{Solid: 0},
 	{TiledBackground: 0},
 	{TV: 0},
-	{Keyboard: 0}
+	{Keyboard: 0},
+	{Bookshelf: 0},
+	{CatTower1: 0},
+	{CatTower2: 0},
+	{CatTower3: 0}
 ];
 
 self.InstanceType = {
@@ -38,5 +42,9 @@ self.InstanceType = {
 	TVStand: class extends self.ITiledBackgroundInstance {},
 	TiledBackground: class extends self.ITiledBackgroundInstance {},
 	TV: class extends self.ISpriteInstance {},
-	Keyboard: class extends self.IInstance {}
+	Keyboard: class extends self.IInstance {},
+	Bookshelf: class extends self.ISpriteInstance {},
+	CatTower1: class extends self.ISpriteInstance {},
+	CatTower2: class extends self.ISpriteInstance {},
+	CatTower3: class extends self.ISpriteInstance {}
 }
