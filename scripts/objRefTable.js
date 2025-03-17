@@ -10,13 +10,19 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.jumpthru,
 		C3.Behaviors.solid,
 		C3.Plugins.Keyboard,
+		C3.Behaviors.Physics,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.Sprite.Acts.SetMirrored,
 		C3.Behaviors.Platform.Cnds.OnMove,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Behaviors.Platform.Cnds.OnStop,
-		C3.Plugins.Sprite.Acts.SetAnimFrame
+		C3.Plugins.Sprite.Acts.SetAnimFrame,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Behaviors.Physics.Acts.SetAwake,
+		C3.Plugins.Sprite.Cnds.OnCollision,
+		C3.Behaviors.Physics.Acts.ApplyForce,
+		C3.Plugins.System.Exps.random
 	];
 };
 self.C3_JsPropNameTable = [
@@ -36,7 +42,10 @@ self.C3_JsPropNameTable = [
 	{CatTower2: 0},
 	{CatTower3: 0},
 	{Table: 0},
-	{Shelf: 0}
+	{Shelf: 0},
+	{Physics: 0},
+	{Plant: 0},
+	{HitBox: 0}
 ];
 
 self.InstanceType = {
@@ -51,5 +60,7 @@ self.InstanceType = {
 	CatTower2: class extends self.ISpriteInstance {},
 	CatTower3: class extends self.ISpriteInstance {},
 	Table: class extends self.ISpriteInstance {},
-	Shelf: class extends self.ISpriteInstance {}
+	Shelf: class extends self.ISpriteInstance {},
+	Plant: class extends self.ISpriteInstance {},
+	HitBox: class extends self.ISpriteInstance {}
 }
