@@ -1386,7 +1386,9 @@ function or(l, r)
 self.C3_ExpressionFuncs = [
 		() => "Movement",
 		() => "walk",
-		() => "idle"
+		() => "idle",
+		() => "crouch",
+		() => 0
 ];
 
 

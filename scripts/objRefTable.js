@@ -15,7 +15,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetMirrored,
 		C3.Behaviors.Platform.Cnds.OnMove,
 		C3.Plugins.Sprite.Acts.SetAnim,
-		C3.Behaviors.Platform.Cnds.OnStop
+		C3.Behaviors.Platform.Cnds.OnStop,
+		C3.Plugins.Sprite.Acts.SetAnimFrame
 	];
 };
 self.C3_JsPropNameTable = [
