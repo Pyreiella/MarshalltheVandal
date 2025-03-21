@@ -11,18 +11,30 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.solid,
 		C3.Plugins.Keyboard,
 		C3.Behaviors.Physics,
+		C3.Plugins.Mouse,
+		C3.Plugins.Text,
+		C3.Plugins.Camera3D,
 		C3.Plugins.System.Cnds.IsGroupActive,
-		C3.Plugins.Keyboard.Cnds.OnKey,
-		C3.Plugins.Sprite.Acts.SetMirrored,
+		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.Text.Acts.SetText,
 		C3.Behaviors.Platform.Cnds.OnMove,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Behaviors.Platform.Cnds.OnStop,
+		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
+		C3.Plugins.Keyboard.Cnds.IsKeyDown,
+		C3.Behaviors.Platform.Acts.SimulateControl,
+		C3.Plugins.Sprite.Acts.SetMirrored,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Behaviors.Physics.Acts.SetAwake,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Behaviors.Physics.Acts.ApplyForce,
-		C3.Plugins.System.Exps.random
+		C3.Plugins.System.Exps.random,
+		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.Sprite.Cnds.IsOutsideLayout,
+		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked,
+		C3.Plugins.System.Acts.GoToLayout
 	];
 };
 self.C3_JsPropNameTable = [
@@ -45,7 +57,17 @@ self.C3_JsPropNameTable = [
 	{Shelf: 0},
 	{Physics: 0},
 	{Plant: 0},
-	{HitBox: 0}
+	{Bookshelf2: 0},
+	{InfoBG: 0},
+	{InfoButton: 0},
+	{Mouse: 0},
+	{Door: 0},
+	{InfoText: 0},
+	{Score: 0},
+	{"3DCamera": 0},
+	{InfoMovement: 0},
+	{Back: 0},
+	{ScoreCount: 0}
 ];
 
 self.InstanceType = {
@@ -62,5 +84,14 @@ self.InstanceType = {
 	Table: class extends self.ISpriteInstance {},
 	Shelf: class extends self.ISpriteInstance {},
 	Plant: class extends self.ISpriteInstance {},
-	HitBox: class extends self.ISpriteInstance {}
+	Bookshelf2: class extends self.ISpriteInstance {},
+	InfoBG: class extends self.ITiledBackgroundInstance {},
+	InfoButton: class extends self.ISpriteInstance {},
+	Mouse: class extends self.IInstance {},
+	Door: class extends self.ISpriteInstance {},
+	InfoText: class extends self.ITextInstance {},
+	Score: class extends self.ITextInstance {},
+	_3DCamera: class extends self.IInstance {},
+	InfoMovement: class extends self.ISpriteInstance {},
+	Back: class extends self.ISpriteInstance {}
 }
