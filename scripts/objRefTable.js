@@ -30,10 +30,15 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Behaviors.Physics.Acts.ApplyForce,
 		C3.Plugins.System.Exps.random,
-		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.Sprite.Cnds.IsOutsideLayout,
 		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
+		C3.Plugins.Sprite.Acts.SetVisible,
+		C3.Plugins.Mouse.Cnds.OnClick,
+		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.System.Cnds.TriggerOnce,
+		C3.Plugins.Sprite.Cnds.IsOverlapping,
 		C3.Plugins.System.Acts.GoToLayout
 	];
 };
@@ -67,6 +72,21 @@ self.C3_JsPropNameTable = [
 	{"3DCamera": 0},
 	{InfoMovement: 0},
 	{Back: 0},
+	{BedroomGround: 0},
+	{OpenDoor: 0},
+	{Switch: 0},
+	{Remote: 0},
+	{Bed: 0},
+	{Bed2: 0},
+	{BedPost: 0},
+	{Bed3: 0},
+	{Dresser: 0},
+	{Lamp2: 0},
+	{Flowers: 0},
+	{Information: 0},
+	{Painting: 0},
+	{Photo: 0},
+	{Hint: 0},
 	{ScoreCount: 0}
 ];
 
@@ -93,5 +113,20 @@ self.InstanceType = {
 	Score: class extends self.ITextInstance {},
 	_3DCamera: class extends self.IInstance {},
 	InfoMovement: class extends self.ISpriteInstance {},
-	Back: class extends self.ISpriteInstance {}
+	Back: class extends self.ISpriteInstance {},
+	BedroomGround: class extends self.ITiledBackgroundInstance {},
+	OpenDoor: class extends self.ISpriteInstance {},
+	Switch: class extends self.ISpriteInstance {},
+	Remote: class extends self.ISpriteInstance {},
+	Bed: class extends self.ISpriteInstance {},
+	Bed2: class extends self.ISpriteInstance {},
+	BedPost: class extends self.ISpriteInstance {},
+	Bed3: class extends self.ISpriteInstance {},
+	Dresser: class extends self.ISpriteInstance {},
+	Lamp2: class extends self.ISpriteInstance {},
+	Flowers: class extends self.ISpriteInstance {},
+	Information: class extends self.ISpriteInstance {},
+	Painting: class extends self.ISpriteInstance {},
+	Photo: class extends self.ISpriteInstance {},
+	Hint: class extends self.ISpriteInstance {}
 }

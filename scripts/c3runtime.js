@@ -1419,14 +1419,28 @@ self.C3_ExpressionFuncs = [
 		() => "idle",
 		() => "crouch",
 		() => 0,
-		() => "Action",
+		() => "Level 1 Actions",
 		() => 200,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0((-100), 100);
 		},
+		() => 10,
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0((-200), 200);
+		},
+		() => 20,
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0((-10), 10);
+		},
 		() => 5,
-		() => "InfoPage"
+		() => "InfoPage",
+		() => "Door Opens",
+		() => 25,
+		() => "open",
+		() => "Level 2 Actions"
 ];
 
 
